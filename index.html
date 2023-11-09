@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" x-data="{menuIsOpen: false,
+}">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,12 +14,10 @@
   <!-- https://emmet.io/ -->
   <!-- header>h1{Test de menu} -->
   <header>
-    <button>aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-      menu </button>
+    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">Ouvrir</button>
     <h1>Test de menu</h1>
     <nav id="mainNav" x-show="menuIsOpen" x-transition>
-      <!--On en est a personaliser la trasition mais le bouton
-      menu pose probleme -->
+
       <ul>
         <li><a href="#">item 1</a></li>
         <li><a href="#">item 2</a></li>
