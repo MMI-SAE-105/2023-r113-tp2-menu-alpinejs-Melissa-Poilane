@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false,
-}":class="{noscroll:menuIsOpen}">
+<html lang="fr" 
+x-data="{menuIsOpen: false, ddlorem: false, ddVolupates: false, ddQuo: false, }":class="{noscroll:menuIsOpen}">
 
 <head>
   <meta charset="UTF-8" />
@@ -60,6 +60,25 @@
     nemo aliquid pariatur quam voluptates animi laudantium, aperiam
     consectetur nobis enim.
   </p>
+  <dl>
+    
+    <dt>Lorem.</dt>
+<nav id="dd1" x-show="ddlorem">
+    <dd>Lorem ipsum dolor sit amet.</dd>
+
+  </dl></nav>
+  <dl>
+    <dt>Voluptates!</dt>
+    <nav id="dd2" x-show="ddVolupates">
+    <dd>Placeat mollitia quis inventore hic?</dd>
+
+  </dl>
+  <dl>
+    <dt>Quo.</dt>
+    <nav id="dd3" x-show="ddQuo">
+    <dd>Ducimus quod non dolor quam?</dd>
+
+  </dl>
 </body>
 
 </html>
