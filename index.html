@@ -63,19 +63,19 @@ x-data="{menuIsOpen: false, ddlorem: false, ddVolupates: false, ddQuo: false, }"
   <dl>
     
     <dt aria-controls="dd1" @click="ddlorem = ! ddlorem">Lorem.</dt>
-<nav id="dd1" x-show="ddlorem">
+<nav id="dd1" x-show="ddlorem" x-transition.duration.500ms>
     <dd>Lorem ipsum dolor sit amet.</dd>
 
   </dl></nav>
   <dl>
     <dt aria-controls="dd2" @click="ddVolupates = ! ddVolupates">Voluptates!</dt>
-    <nav id="dd2" x-show="ddVolupates">
+    <nav id="dd2" x-show="ddVolupates" x-transition.duration.500ms>
     <dd>Placeat mollitia quis inventore hic?</dd>
 
   </dl>
   <dl>
     <dt aria-controls="dd3" @click="ddQuo = ! ddQuo">Quo.</dt>
-    <nav id="dd3" x-show="ddQuo">
+    <nav id="dd3" x-show="ddQuo" x-transition.duration.500ms>
     <dd>Ducimus quod non dolor quam?</dd>
 
   </dl>
