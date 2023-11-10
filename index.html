@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr" 
-x-data="{menuIsOpen: false, ddlorem: false, ddVolupates: false, ddQuo: false, }":class="{noscroll:menuIsOpen}">
+<html lang="fr" x-data="{menuIsOpen: false}" x-data="{ddlorem: false}" x-data="{ddVolupates: false}"
+  x-data="{ddQuo: falsen}" :class="{noscroll:menuIsOpen}">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,40 +8,37 @@ x-data="{menuIsOpen: false, ddlorem: false, ddVolupates: false, ddQuo: false, }"
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Test menu</title>
   <script defer src="https://unpkg.com/alpinejs"></script>
-<style>
-  .menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #fff;
-    display: grid;
-    place-content: center;
-  }
-.header__menu-Btn{
-  position: relative;
-  z-index: 10;
-}
-.noscroll,
-.noscroll body {
-  overflow: hidden;
-}
-</style>
+  <style>
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #fff;
+      display: grid;
+      place-content: center;
+    }
+
+    .header__menu-Btn {
+      position: relative;
+      z-index: 10;
+    }
+
+    .noscroll,
+    .noscroll body {
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
   <!-- https://emmet.io/ -->
   <!-- header>h1{Test de menu} -->
   <header>
-    <button aria-controls="mainNav" 
-    @click="menuIsOpen = ! menuIsOpen"
-    class="header__menu-Btn"
-    >Menu</button>
+    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menu-Btn">Menu</button>
     <h1>Test de menu</h1>
-    <nav id="mainNav" x-show="menuIsOpen" x-transition.duraion.800ms
-    class="menu"
-    >
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duraion.800ms class="menu">
 
       <ul>
         <li><a href="#">item 1</a></li>
@@ -61,22 +58,23 @@ x-data="{menuIsOpen: false, ddlorem: false, ddVolupates: false, ddQuo: false, }"
     consectetur nobis enim.
   </p>
   <dl>
-    
-    <dt aria-controls="dd1" @click="ddlorem = ! ddlorem">Lorem.</dt>
-<nav id="dd1" x-show="ddlorem" x-transition.duration.500ms>
-    <dd>Lorem ipsum dolor sit amet.</dd>
 
-  </dl></nav>
+    <dt aria-controls="dd1" @click="ddlorem = ! ddlorem">Lorem.</dt>
+    <nav id="dd1" x-show="ddlorem" x-transition.duration.500ms>
+      <dd>Lorem ipsum dolor sit amet.</dd>
+
+  </dl>
+  </nav>
   <dl>
     <dt aria-controls="dd2" @click="ddVolupates = ! ddVolupates">Voluptates!</dt>
     <nav id="dd2" x-show="ddVolupates" x-transition.duration.500ms>
-    <dd>Placeat mollitia quis inventore hic?</dd>
+      <dd>Placeat mollitia quis inventore hic?</dd>
 
   </dl>
   <dl>
     <dt aria-controls="dd3" @click="ddQuo = ! ddQuo">Quo.</dt>
     <nav id="dd3" x-show="ddQuo" x-transition.duration.500ms>
-    <dd>Ducimus quod non dolor quam?</dd>
+      <dd>Ducimus quod non dolor quam?</dd>
 
   </dl>
 </body>
