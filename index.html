@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" x-data="{ddlorem: false}" x-data="{ddVolupates: false}"
-  x-data="{ddQuo: falsen}" :class="{noscroll:menuIsOpen}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
 
 <head>
   <meta charset="UTF-8" />
@@ -57,7 +56,7 @@
     nemo aliquid pariatur quam voluptates animi laudantium, aperiam
     consectetur nobis enim.
   </p>
-  <dl>
+  <dl x-data="{ddlorem: false}">
 
     <dt aria-controls="dd1" @click="ddlorem = ! ddlorem">Lorem.</dt>
     <nav id="dd1" x-show="ddlorem" x-transition.duration.500ms>
@@ -65,12 +64,12 @@
 
   </dl>
   </nav>
-  <dl>
+  <dl x-data="{ddVolupates: false}">
     <dt aria-controls="dd2" @click="ddVolupates = ! ddVolupates">Voluptates!</dt>
     <nav id="dd2" x-show="ddVolupates" x-transition.duration.500ms>
       <dd>Placeat mollitia quis inventore hic?</dd>
 
-  </dl>
+  </dl x-data="{ddQuo: false}">
   <dl>
     <dt aria-controls="dd3" @click="ddQuo = ! ddQuo">Quo.</dt>
     <nav id="dd3" x-show="ddQuo" x-transition.duration.500ms>
