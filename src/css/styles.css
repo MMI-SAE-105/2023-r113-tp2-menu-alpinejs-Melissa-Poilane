@@ -25,7 +25,12 @@
 }
 .dog {
     content: url("../../public/icones/dog.svg");
+    margin-left: 25px; /* Décale légèrement à droite */
+    
 }
+
+
+
 .cat {
     content: url("../../public/icones/cat.svg");
 }
@@ -33,3 +38,12 @@
     content: url("../../public/icones/house.svg");
 }
 
+.dog, .cat, .house {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.cat, .house {
+    margin: 0 20px; /* Augmente l'espace de chaque côté */
+}
