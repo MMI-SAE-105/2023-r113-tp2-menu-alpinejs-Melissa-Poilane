@@ -23,12 +23,13 @@
     width: 100%;
     height: auto;
 }
-nav>h4::before {
-    content: url("../../public/icones/book.svg");
+.dog {
+    content: url("../../public/icones/dog.svg");
 }
-nav>ul>li>a::before {
-    content: url("../../public/icones/bag-plus.svg");
+.cat {
+    content: url("../../public/icones/cat.svg");
 }
-nav>ul>li>ul>li>a::before {
-    content: url("../../public/icones/archive.svg");
+.house {
+    content: url("../../public/icones/house.svg");
 }
+
