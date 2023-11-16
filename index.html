@@ -37,20 +37,23 @@
   </p>
   <dl x-data="{ddlorem: false}">
 
-    <dt aria-controls="dd1" @click="ddlorem = ! ddlorem">Lorem.</dt>
+    <dt aria-controls="dd1" @click="ddlorem = ! ddlorem">Lorem.<img class="logoaccordeon" src="public/icones/plus.svg" alt="logo plus"></dt>
+    
     <nav id="dd1" x-show="ddlorem" x-transition.duration.500ms>
       <dd>Lorem ipsum dolor sit amet.</dd>
 
   </dl>
   </nav>
   <dl x-data="{ddVolupates: false}">
-    <dt aria-controls="dd2" @click="ddVolupates = ! ddVolupates">Voluptates!</dt>
+    <dt aria-controls="dd2" @click="ddVolupates = ! ddVolupates">Voluptates!<img class="logoaccordeon" src="public/icones/plus.svg" alt="logo plus"></dt>
+    
     <nav id="dd2" x-show="ddVolupates" x-transition.duration.500ms>
       <dd>Placeat mollitia quis inventore hic?</dd>
 
   </dl>
   <dl x-data="{ddQuo: false}">
-    <dt aria-controls="dd3" @click="ddQuo = ! ddQuo">Quo.</dt>
+    <dt aria-controls="dd3" @click="ddQuo = ! ddQuo">Quo.<img class="logoaccordeon" src="public/icones/plus.svg" alt="logo plus"></dt>
+    
     <nav id="dd3" x-show="ddQuo" x-transition.duration.500ms>
       <dd>Ducimus quod non dolor quam?</dd>
 
