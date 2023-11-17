@@ -4,13 +4,14 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #fff;
+    background: #f4c198;
     display: grid;
     place-content: center;
   }
 
   dt, .logoaccordeon {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -34,18 +35,9 @@
     
 }
 
-
-
 .cat {
     content: url("../../public/icones/cat.svg");
 }
-
-
-.dog, .cat, .house {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
 
 .cat, .house {
     margin: 0 20px; /* Augmente l'espace de chaque côté */
@@ -68,4 +60,32 @@ body {
 
 p, h1, h2, ul, li, dl, dt, dd {
   color: #f4e5d7;
+}
+.image {
+  width: 40%;
+  height: auto;
+ border-radius: 7px;
+}
+.container {
+  display: flex;
+  justify-content: flex-start; /* Aligne les images à gauche */
+  gap: 20px; /* Ajoute de l'espace entre les images */
+  margin-left: 10px; 
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+dl {
+    width: 250px; /* Définit la largeur */
+    height: auto; /* Définit la hauteur */
+    background-color: #f4c198;
+    border-radius: 10px; /* Arrondit tous les coins */
+    padding: 10px 10px; /* Ajoute un peu de marge intérieure */
 }
