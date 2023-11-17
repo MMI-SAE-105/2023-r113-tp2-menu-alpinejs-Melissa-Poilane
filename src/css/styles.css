@@ -39,9 +39,7 @@
 .cat {
     content: url("../../public/icones/cat.svg");
 }
-.house {
-    content: url("../../public/icones/house.svg");
-}
+
 
 .dog, .cat, .house {
     display: flex;
@@ -51,4 +49,23 @@
 
 .cat, .house {
     margin: 0 20px; /* Augmente l'espace de chaque côté */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4c198;
+  border-bottom-left-radius: 10px; /* Arrondit le coin inférieur gauche */
+  border-bottom-right-radius: 10px; /* Arrondit le coin inférieur droit */
+  padding: 10px 20px; /* Ajoute un peu de marge intérieure */
+}
+
+body {
+  background-color: #1a120b;
+  margin-top: 0; /* Ajout de cette ligne pour supprimer la marge du haut */
+}
+
+p, h1, h2, ul, li, dl, dt, dd {
+  color: #f4e5d7;
 }

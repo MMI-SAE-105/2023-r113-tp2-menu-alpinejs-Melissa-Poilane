@@ -14,22 +14,25 @@
   <!-- https://emmet.io/ -->
   <!-- header>h1{Test de menu} -->
   <header>
-    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menu-Btn">Menu</button>
-    <h1>Test de menu</h1>
+      <a href='/'>
+      <img class="house" src="public/icones/house.svg" alt="Accueil">
+    <article>
+    </a>
+    <img class="Hamburger" src="public/icones/Hamburger.svg" alt="icone du menu" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menu-Btn">
     <nav id="mainNav" x-show="menuIsOpen" x-transition.duraion.800ms class="menu">
-
       <ul>
         <li ><a href="cats/index.html"class="cat">Les chats</a></li>
         <li><a href="dogs/index.html" class="dog">Les chiens</a></li>
-        <li><a href="../index.html" class="house">Index </a></li>
       </ul>
     </nav>
     </nav>
+  </article>
   </header>
 
+  <h1>Animaux de compagnie</h1>
   <!-- h2>lorem2^p>lorem -->
   <h2>Lorem, ipsum.</h2>
-  <p>
+  <p> 
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
     mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
     nemo aliquid pariatur quam voluptates animi laudantium, aperiam
