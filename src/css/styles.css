@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+dt {
+  cursor: pointer; 
+}
+
   .header__menu-Btn {
     position: relative;
     z-index: 10;
@@ -88,4 +92,8 @@ dl {
     background-color: #f4c198;
     border-radius: 10px; /* Arrondit tous les coins */
     padding: 10px 10px; /* Ajoute un peu de marge intérieure */
+}
+
+.click {
+  cursor: pointer;
 }
