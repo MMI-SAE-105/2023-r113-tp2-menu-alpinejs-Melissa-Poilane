@@ -72,7 +72,7 @@ p, h1, h2, ul, li, dl, dt, dd {
 }
 .container {
   display: flex;
-  justify-content: flex-start; /* Aligne les images à gauche */
+  justify-content: center;
   gap: 20px; /* Ajoute de l'espace entre les images */
   margin-left: 10px; 
 }
@@ -96,4 +96,21 @@ dl {
 
 .click {
   cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #f4c198;
+  padding: 10px ; 
+  border-radius: 5px;
+ margin-left: 500px;
+ margin-right: 500px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #f4e5d7
 }
