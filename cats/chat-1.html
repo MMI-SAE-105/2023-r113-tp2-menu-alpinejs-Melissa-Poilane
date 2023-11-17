@@ -11,20 +11,22 @@
 </head>
 
 <body>
-    <body>
-        <header>
-          <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menu-Btn">Menu</button>
-          <h1>Chat 1</h1>
-          <nav id="mainNav" x-show="menuIsOpen" x-transition.duraion.800ms class="menu">
-      
-            <ul>
-                <li><a href="../cats/index.html" class="cat">Les chats </a></li>
-                <li><a href="../dogs/index.html" class="dog">Les chiens </a></li>
-                <li><a href="../index.html" class="house">Index </a></li>
-            </ul>
-          </nav>
-          </nav>
-        </header>
+  <header>
+    <a href='/'>
+    <img class="house" src="../public/icones/house.svg" alt="Accueil">
+  <article>
+  </a>
+  <img src="../public/icones/Hamburger.svg" alt="icone du menu" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show="! menuIsOpen" class="header__menu-Btn">
+  <img src="../public/icones/croix.svg" alt="Icone de fermeture" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show="menuIsOpen" class="header__menu-Btn">
+  <nav id="mainNav" x-show="menuIsOpen" x-transition.duraion.800ms class="menu"  style="display : none">
+    <ul>
+      <li ><a href="cats/index.html"class="cat">Les chats</a></li>
+      <li><a href="dogs/index.html" class="dog">Les chiens</a></li>
+    </ul>
+  </nav>
+  </nav>
+</article>
+</header> 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, consectetur. Alias dolores nulla, animi in totam aut sequi.</p>
         <img class="media media--fullwidth" src="../public/img/cats/Chat_persan_chinchilla.jpg" alt="Imge de chien">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis iste molestiae! Quasi esse nulla doloribus maiores! Nesciunt, qui reiciendis necessitatibus aliquid, harum cum quae at ducimus ut dolores eum.</p>
