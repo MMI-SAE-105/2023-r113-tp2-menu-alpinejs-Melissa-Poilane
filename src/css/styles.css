@@ -114,3 +114,15 @@ dl {
   font-size: 20px;
   color: #f4e5d7
 }
+
+h1, h2, h3 {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+body, p, ul, li, dl, dt, dd {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+dt, dl, dd {
+ color: #1a120b;
+}
