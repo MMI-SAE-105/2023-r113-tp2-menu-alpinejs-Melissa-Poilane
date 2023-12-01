@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Test menu</title>
+  <title>Choix de la langue</title>
   <link rel="icon" href='/public/icones/animals.svg'>
   <link rel="stylesheet" href="src/css/styles.css">
   <script defer src="https://unpkg.com/alpinejs"></script>
@@ -14,64 +14,13 @@
 <body>
   <!-- https://emmet.io/ -->
   <!-- header>h1{Test de menu} -->
-  <header>
-    <a href="/">
-      <img class="house" src="public/icones/house.svg" alt="Accueil">
-      <article>
-    </a>
-    <img src="public/icones/Hamburger.svg" alt="icone du menu" aria-controls="mainNav"
-      @click="menuIsOpen = ! menuIsOpen" x-show="! menuIsOpen" class="header__menu-Btn">
-    <img src="public/icones/croix.svg" alt="Icone de fermeture" aria-controls="mainNav"
-      @click="menuIsOpen = ! menuIsOpen" x-show="menuIsOpen" class="header__menu-Btn">
-    <nav id="mainNav" x-show="menuIsOpen" x-transition.duraion.800ms class="menu" style="display : none">
-      <ul>
-        <li><a href="fr/cats/index.html" class="cat">Les chats</a></li>
-        <li><a href="fr/dogs/index.html" class="dog">Les chiens</a></li>
-      </ul>
-    </nav>
-    </nav>
-    </article>
-  </header>
 
-  <h1>Animaux de compagnie</h1>
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-    mollitia adipisci alias quibusdam, voluptates, quidem, quas
-  </p>
-  <section class="container">
-    <img class="image" src="public/img/home/andrew-s-ouo1hbizWwo-unsplash.jpg" alt="image du home">
-    <img class="image" src="public/img/home/pexels-alexander-grey-1909802.jpg" alt="image du home">
-  </section>
-
-  <!-- h2>lorem2^p>lorem -->
-  <h2>Acordeon</h2>
-
-  <dl x-data="{ddlorem: false}">
-
-    <dt aria-controls="dd1" @click="ddlorem = ! ddlorem">Lorem.<img class="logoaccordeon" src="public/icones/plus.svg"
-        alt="logo plus"></dt>
-
-    <nav id="dd1" x-show="ddlorem" x-transition.duration.500ms>
-      <dd>Lorem ipsum dolor sit amet.</dd>
-
-  </dl>
+  <nav>
+    <ul>
+      <li><a href="/fr/">Francais</a></li>
+      <li><a href="/en/">English</a></li>
+    </ul>
   </nav>
-  <dl x-data="{ddVolupates: false}">
-    <dt aria-controls="dd2" @click="ddVolupates = ! ddVolupates">Voluptates!<img class="logoaccordeon"
-        src="public/icones/plus.svg" alt="logo plus"></dt>
-
-    <nav id="dd2" x-show="ddVolupates" x-transition.duration.500ms>
-      <dd>Placeat mollitia quis inventore hic?</dd>
-
-  </dl>
-  <dl x-data="{ddQuo: false}">
-    <dt aria-controls="dd3" @click="ddQuo = ! ddQuo">Quo.<img class="logoaccordeon" src="public/icones/plus.svg"
-        alt="logo plus"></dt>
-
-    <nav id="dd3" x-show="ddQuo" x-transition.duration.500ms>
-      <dd>Ducimus quod non dolor quam?</dd>
-
-  </dl>
 
 </body>
 
