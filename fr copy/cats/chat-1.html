@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les chats !</title>
+  <link rel="icon" href="/public/icones/animals.svg">
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+  <header>
+    <a href="/">
+      <img class="house" src="/public/icones/house.svg" alt="Accueil">
+      <article>
+    </a>
+    <img src="/public/icones/Hamburger.svg" alt="icone du menu" aria-controls="mainNav"
+      @click="menuIsOpen = ! menuIsOpen" x-show="! menuIsOpen" class="header__menu-Btn">
+    <img src="/public/icones/croix.svg" alt="Icone de fermeture" aria-controls="mainNav"
+      @click="menuIsOpen = ! menuIsOpen" x-show="menuIsOpen" class="header__menu-Btn">
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duraion.800ms class="menu" style="display : none">
+      <ul>
+        <li><a href="/fr/cats/index.html" class="cat">Les chats</a></li>
+        <li><a href="/fr/dogs/index.html" class="dog">Les chiens</a></li>
+      </ul>
+    </nav>
+    </nav>
+    </article>
+  </header>
+  <h1>Les chats écaille de tortue</h1>
+  <p>Le saviez vous? Les chat avec cette couleur de robe sont presque exclusivement des femelles</p>
+
+  <section class="container">
+    <img class="image" src="/public/img/cats/gabriella-clare-marino-tuQ5_6QJUTM-unsplash.jpg" alt="image de chat">
+    <img class="image" src="/public/img/cats/pexels-just-a-couple-photos-3777622.jpg" alt="image de chat">
+  </section><a href="/fr/cats/chat-2.html">
+    <p class="click">Suivant</p>
+  </a>
+</body>
+
+</html>
