@@ -12,7 +12,12 @@
 dt,
 .logoaccordeon {
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+dt {
+  cursor: pointer;
 }
 
 .header__menu-Btn {
@@ -41,20 +46,115 @@ dt,
   content: url("../../public/icones/cat.svg");
 }
 
-.house {
-  content: url("../../public/icones/house.svg");
-}
-
-.dog,
-.cat,
-.house {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .cat,
 .house {
   margin: 0 20px;
   /* Augmente l'espace de chaque côté */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4c198;
+  border-bottom-left-radius: 10px;
+  /* Arrondit le coin inférieur gauche */
+  border-bottom-right-radius: 10px;
+  /* Arrondit le coin inférieur droit */
+  padding: 10px 20px;
+  /* Ajoute un peu de marge intérieure */
+}
+
+body {
+  background-color: #1a120b;
+  margin-top: 0;
+  /* Ajout de cette ligne pour supprimer la marge du haut */
+}
+
+p,
+h1,
+h2,
+ul,
+li,
+dl,
+dt,
+dd {
+  color: #f4e5d7;
+}
+
+.image {
+  width: 40%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* Ajoute de l'espace entre les images */
+  margin-left: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+dl {
+  width: 250px;
+  /* Définit la largeur */
+  height: auto;
+  /* Définit la hauteur */
+  background-color: #f4c198;
+  border-radius: 10px;
+  /* Arrondit tous les coins */
+  padding: 10px 10px;
+  /* Ajoute un peu de marge intérieure */
+}
+
+.click {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4c198;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #f4e5d7
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+body,
+p,
+ul,
+li,
+dl,
+dt,
+dd {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+dt,
+dl,
+dd {
+  color: #1a120b;
 }
