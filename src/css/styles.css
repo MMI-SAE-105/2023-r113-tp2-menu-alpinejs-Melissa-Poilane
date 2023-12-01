@@ -158,3 +158,18 @@ dl,
 dd {
   color: #1a120b;
 }
+
+.langue {
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #f4e5d7;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
