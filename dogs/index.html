@@ -7,40 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Les chiens !</title>
   <link rel="icon" href='/public/icones/animals.svg'>
-    <link rel="stylesheet" href="../src/css/styles.css">
-    <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="../src/css/styles.css">
+  <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 
 <body>
-      <header>
-        <a href='/'>
-        <img class="house" src="../public/icones/house.svg" alt="Accueil">
-      <article>
-      </a>
-      <img src="../public/icones/Hamburger.svg" alt="icone du menu" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show="! menuIsOpen" class="header__menu-Btn">
-      <img src="../public/icones/croix.svg" alt="Icone de fermeture" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show="menuIsOpen" class="header__menu-Btn">
-      <nav id="mainNav" x-show="menuIsOpen" x-transition.duraion.800ms class="menu"  style="display : none">
+
+  <body>
+    <header>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menu-Btn">Menu</button>
+      <h1>Les chiens !</h1>
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duraion.800ms class="menu">
+
         <ul>
-          <li ><a href='/cats/' class="cat">Les chats</a></li>
-          <li><a href='/dogs/' class="dog">Les chiens</a></li>
+          <li><a href="../cats/index.html" class="cat">Les chats </a></li>
+          <li><a href="../dogs/index.html" class="dog">Les chiens </a></li>
+          <li><a href="../index.html" class="house">Index </a></li>
         </ul>
       </nav>
       </nav>
-    </article>
-    </header> 
-    <h1>Les chiens</h1>
-    
-      
- 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eaque tenetur quam totam, voluptatem veritatis quo doloribus fuga, modi voluptates, culpa aut unde? Laborum, qui perspiciatis. Harum sunt labore inventore.</p>
-     <a href='/dogs/chien-1.html'> <h3 class="click">Voir nos chiens</h3></a>
-      <section class="container">
-    <img class="image" src='/public/img/dogs/pexels-pixabay-220938.jpg' alt="image de chien">
-    <img class="image" src="../public/img/dogs/taylor-kopel-WX4i1Jq_o0Y-unsplash.jpg" alt="image de chien">
-    </section>
-    <h2 class="title">Nous avons aussi des chats</h2>
-       <a href='/cats/'> <h3 class="click">Voir nos chats</h3></a>
+    </header>
+    <ul>
+      <li><a href="../dogs/chien-1.html">Voir les chiens</a></li>
 
-</body>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eaque tenetur quam totam, voluptatem veritatis quo
+      doloribus fuga, modi voluptates, culpa aut unde? Laborum, qui perspiciatis. Harum sunt labore inventore.</p>
+    <img class="media media--fullwidth"
+      src="../public/img/dogs/2017-05-01_AT_Wien_02_Leopoldstadt,_Prater,_Canis_lupus_familiaris_(51363929499).jpg"
+      alt="image de chien">
+    <img class="media media--fullwidth" src="../public/img/dogs/20160303_-_Canis_lupus_familiaris_3.jpg"
+      alt="image de chien">
+
+    <h2>Nous avons aussi des chats</h2>
+    <ul>
+      <li><a href="../cats/index.html">Voir les chats</a></li>
+    </ul>
+  </body>
 
 </html>

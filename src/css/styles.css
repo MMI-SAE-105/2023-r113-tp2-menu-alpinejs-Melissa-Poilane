@@ -1,127 +1,60 @@
 .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #f4c198;
-    display: grid;
-    place-content: center;
-  }
-
-  dt, .logoaccordeon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #f4c198;
+  display: grid;
+  place-content: center;
 }
 
-dt {
-  cursor: pointer; 
+dt,
+.logoaccordeon {
+  display: flex;
+  align-items: center;
 }
 
-  .header__menu-Btn {
-    position: relative;
-    z-index: 10;
-  }
-
-  .noscroll,
-  .noscroll body {
-    overflow: hidden;
-  }
-
-  .media--fullwidth {
-    width: 100%;
-    height: auto;
+.header__menu-Btn {
+  position: relative;
+  z-index: 10;
 }
+
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+
+.media--fullwidth {
+  width: 100%;
+  height: auto;
+}
+
 .dog {
-    content: url("../../public/icones/dog.svg");
-    margin-left: 25px; /* Décale légèrement à droite */
-    
+  content: url("../../public/icones/dog.svg");
+  margin-left: 25px;
+  /* Décale légèrement à droite */
+
 }
 
 .cat {
-    content: url("../../public/icones/cat.svg");
+  content: url("../../public/icones/cat.svg");
 }
 
-.cat, .house {
-    margin: 0 20px; /* Augmente l'espace de chaque côté */
+.house {
+  content: url("../../public/icones/house.svg");
 }
 
-header {
+.dog,
+.cat,
+.house {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #f4c198;
-  border-bottom-left-radius: 10px; /* Arrondit le coin inférieur gauche */
-  border-bottom-right-radius: 10px; /* Arrondit le coin inférieur droit */
-  padding: 10px 20px; /* Ajoute un peu de marge intérieure */
-}
-
-body {
-  background-color: #1a120b;
-  margin-top: 0; /* Ajout de cette ligne pour supprimer la marge du haut */
-}
-
-p, h1, h2, ul, li, dl, dt, dd {
-  color: #f4e5d7;
-}
-.image {
-  width: 40%;
-  height: auto;
- border-radius: 7px;
-}
-.container {
-  display: flex;
   justify-content: center;
-  gap: 20px; /* Ajoute de l'espace entre les images */
-  margin-left: 10px; 
 }
 
-li {
-  list-style-type: none;
-}
-
-ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-dl {
-    width: 250px; /* Définit la largeur */
-    height: auto; /* Définit la hauteur */
-    background-color: #f4c198;
-    border-radius: 10px; /* Arrondit tous les coins */
-    padding: 10px 10px; /* Ajoute un peu de marge intérieure */
-}
-
-.click {
-  cursor: pointer;
-  display:flex;
-  justify-content: center;
-  align-items: center; 
-  background-color: #f4c198;
-  padding: 10px ; 
-  border-radius: 5px;
-  color: #1a120b;
-}
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: #f4e5d7
-}
-
-h1, h2, h3 {
-  font-family: 'Archivo Black', sans-serif;
-}
-
-body, p, ul, li, dl, dt, dd {
-  font-family: 'Titillium Web', sans-serif;
-}
-
-dt, dl, dd {
- color: #1a120b;
+.cat,
+.house {
+  margin: 0 20px;
+  /* Augmente l'espace de chaque côté */
 }
