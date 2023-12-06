@@ -52,13 +52,19 @@
         </svg>
 
         <h2>Page non trouvée</h2>
-
-        <form action="https://google.com/" method="GET" x-data="{ q:'', }"
+        <section class="btn-container">
+            <button class="btn">
+             <a href="/">
+                 <img class="house" src="/public/icones/house.svg" alt="Accueil">
+             </a>  
+            </button>
+            <form class="btn-container search" action="https://google.com/" method="GET" x-data="{ q:'', }"
             x-on:submit="q = q + ' site:mmimontbeliard.com'">
-            <label for="q">Texte à chercher :</label>
-            <input type="text" id="q" name="q" x-model="q">
-            <button type="submit">Rechercher</button>
-        </form>
+            <label  for="q" class="visually-hidden">Rechercher</label>
+            <input type="text" id="q" name="q" x-model="q" placeholder="Rechercher">
+            <button type="submit"><img src="/public/icones/search.svg" alt="icone de recherche"></button>
+            </form>
+    </section>
     </div>
 </body>
 
